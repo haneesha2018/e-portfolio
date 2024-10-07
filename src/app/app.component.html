@@ -1,7 +1,48 @@
 <!-- src/app/app.component.html -->
-<div class="container mx-auto px-4">
-  <app-home></app-home>
-  <app-about></app-about>
-  <app-projects></app-projects>
-  <app-contact></app-contact>
+<div class="min-h-screen bg-gray-900 text-white">
+  <header class="fixed w-full bg-gray-800 bg-opacity-90 text-white py-4 shadow-md z-10">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-teal-400">Haneesha Dushara._</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-teal-400">// home</a></li>
+          <li><a href="#about" class="hover:text-teal-400">// expertise</a></li>
+          <li><a href="#projects" class="hover:text-teal-400">// work</a></li>
+          <li><a href="#contact" class="hover:text-teal-400">// contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="min-h-screen flex items-center justify-center py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 space-y-6">
+            <h2 class="text-6xl font-bold">Haneesha Dushara</h2>
+            <p class="text-xl text-gray-300">Full-stack Developer & Designer</p>
+            <button class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+              Download Resume
+            </button>
+          </div>
+          <div class="md:w-1/2 mt-8 md:mt-0">
+            <!-- Replace with your 3D graphic or use an SVG -->
+            <div class="w-full h-64 bg-gray-700 rounded-lg shadow-lg flex items-center justify-center">
+              <span class="text-4xl">3D Graphic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <app-about id="about" class="py-20 bg-gray-800"></app-about>
+    <app-projects id="projects" class="py-20"></app-projects>
+    <app-contact id="contact" class="py-20"></app-contact>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Haneesha Dushara. All rights reserved.</p>
+    </div>
+  </footer>
 </div>
